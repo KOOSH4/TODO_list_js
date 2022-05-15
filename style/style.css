@@ -1,0 +1,68 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Quicksand:wght@300;500&family=Raleway:wght@200&family=Roboto:wght@100&display=swap");
+@import url(./reset.css);
+:root {
+  --text: rgb(241, 238, 233);
+  --background: #264653;
+  --foreground: #2A9D8F;
+  --accent: #E76F51;
+  --text-light: #E9C46A;
+  --text-dark: #F4A261;
+}
+
+body {
+  width: 100%;
+  min-height: 100vh;
+  background-image: linear-gradient(120deg, #0F2027, #203A43, #2C5364);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-line-pack: space-evenly;
+      align-content: space-evenly;
+  font-family: 'Montserrat', sans-serif;
+}
+
+h1 {
+  color: var(--text-dark);
+  margin-bottom: 2rem;
+}
+
+form {
+  background: #f3f9cc;
+}
+
+form input, form button {
+  padding: 0.5rem;
+  font-size: 1.5rem;
+  border: none;
+  background: #f3f9cc;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+form button {
+  color: #203A43;
+  background: white;
+  cursor: pointer;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+form button:hover {
+  color: #f3f9cc;
+  background: #203A43;
+}
+/*# sourceMappingURL=style.css.map */
