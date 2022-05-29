@@ -42,12 +42,28 @@ h1 {
 
 form {
   background: #f3f9cc;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 form input, form button {
-  padding: 0.5rem;
-  font-size: 1.5rem;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
   border: none;
+  outline: none;
+  padding: 0.5rem;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  font-size: 1.5rem;
   background: #f3f9cc;
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
@@ -64,5 +80,117 @@ form button {
 form button:hover {
   color: #f3f9cc;
   background: #203A43;
+}
+
+form select {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  border: none;
+  outline: none;
+  background: #f3f9cc;
+  text-align: center;
+  font-size: 1.5rem;
+  cursor: pointer;
+  overflow: hidden;
+}
+
+.task-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.todo {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  border: red 1px solid;
+  background: #f3f9cc;
+  padding: 0.5rem;
+  font-size: 1.5rem;
+  border: none;
+  background: #f3f9cc;
+  -webkit-transition: all 0.7s ease;
+  transition: all 0.7s ease;
+}
+
+.todo li {
+  list-style-type: none;
+}
+
+.done-button {
+  background: none;
+  color: #3cf166;
+  font-size: 1.5rem;
+  border: none;
+  padding: 1rem;
+  cursor: pointer;
+  height: 100%;
+  color: #203A43;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.done-button:hover {
+  background: #3cf166;
+  color: #1f3941;
+}
+
+.edit-button {
+  background: none;
+  color: #fb4b4b;
+  font-size: 1.5rem;
+  border: none;
+  padding: 1rem;
+  cursor: pointer;
+  height: 100%;
+  color: #203A43;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.edit-button:hover {
+  background: #fb4b4b;
+  color: #1f3941;
+}
+
+.fa-solid {
+  pointer-events: none;
+}
+
+.completed {
+  text-decoration: line-through;
+  opacity: 50%;
+}
+
+.deleteAnimation {
+  opacity: 0;
+  -webkit-transform: translateY(8rem) rotateZ(20deg);
+          transform: translateY(8rem) rotateZ(20deg);
+}
+
+.hide {
+  opacity: 30%;
 }
 /*# sourceMappingURL=style.css.map */
